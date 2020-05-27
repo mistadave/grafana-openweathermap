@@ -2,8 +2,8 @@ version: '3'
 
 services:
   grafana:
-    image: grafana/grafana:latest
+    image: grafana/grafana:7.0.0
     ports:
       - "3000:3000"
     volumes:
-      - ./dist:/var/lib/grafana/plugins/openweathermap
+      - ./dist:/var/lib/grafana/plugins/grafana-openweathermap
